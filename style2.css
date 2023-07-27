@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+body{
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu2{
+    width: 340px;
+    height: 50px;
+    margin: 20px;
+}
+.menu2 .grid, .table{
+    float: left;
+    margin-left: 14px;
+    border: solid 1px;
+    border-radius: 20px;
+    padding: 6px;
+    text-decoration: none;
+    color: rgb(74, 73, 73);
+    background-color: rgb(241, 222, 201);
+    box-shadow: 0px 0px 5px rgb(141, 123, 104);
+}
+#calculator{
+    width: 415px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(241, 222, 201);
+}
+button{
+    padding: 40px;
+    font-size: 20px;
+    border: 0px;
+}
+.grid:hover, .table:hover{
+    box-shadow: 0px 0px 10px rgb(141, 123, 104);
+    border-radius: 20px;
+}
+#equals{
+    width: 410px;
+    background-color: rgb(141, 123, 104);
+    color: rgb(74, 73, 73);
+    font-size: 50px;
+    border-radius: 0px 0px 20px 20px;
+}
+#value{
+    height: 70px;
+    text-align: right;
+    font-size: 50px;
+    background-color: rgb(246, 238, 228);
+    color: rgb(74, 73, 73);
+    border-radius: 20px 20px 0px 0px;
+}
+.button{
+    width: 99px;
+    background-color: rgb(241, 222, 201);
+    color: grey;
+}
+.transaction{
+    width: 99px;
+    background-color: rgb(200, 182, 166);
+    color: grey;
+}
+.button:active{
+    background-color: rgb(226, 209, 188);
+}
+.transaction:active{
+    background-color: rgb(187, 171, 156);
+}
+#equals:active{
+    background-color: rgb(131, 114, 97);
+}

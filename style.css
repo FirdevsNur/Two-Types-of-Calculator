@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(236deg, #ebb674, #e5bcac);
+    text-align: center;
+}
+.menu{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.menu .grid, .table{
+    float: left;
+    border: solid 2px rgb(255, 110, 49);
+    border-radius: 20px;
+    padding: 5px;
+    text-decoration: none;
+    background-color: rgb(255, 110, 49);
+    color: rgb(36, 55, 99);
+    box-shadow: 0px 0px 5px rgb(36, 55, 99);
+}
+.menu a:hover{
+    box-shadow: 0px 0px 10px rgb(36, 55, 99);
+    border-radius: 20px;
+}
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+}
+.container{
+    border: solid rgb(138, 113, 88);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 1px 1px 20px rgb(108, 52, 40);
+    
+}
+.calculator{
+    display: grid;
+    background-color: rgb(138, 113, 88);
+    grid-template-columns: repeat(4,auto);
+    gap: 2px;
+    grid-template-areas: 
+    ". . . ."
+    "seven eight nine divided"
+    "four five six multiply"
+    "one two three minus"
+    "zero dot c plus"
+    "equals equals equals equals";
+    
+}
+.calculator button{
+    width: 70px;
+    height: 50px;
+    border: 0;
+    color: rgb(86, 73, 63);
+}
+.number{
+   background-color: rgb(255, 235, 183);
+   font-size: 30px;
+}
+.operator{
+    background-color: rgb(255, 110, 49);
+    font-size: 30px;
+}
+.equals button{
+    width: 287px;
+    background-color: rgb(173, 142, 112);
+    text-align: center;
+    font-size: 30px;
+}
+.value{
+    text-align: right;
+    height: 70px;
+    padding: 15px 10px;
+    font-size: 37px;
+    background-color: rgb(36, 55, 99);
+    color: rgb(255, 235, 183);
+}
+.one {
+    grid-area: one;
+}
+.two {
+    grid-area: two;
+}
+.three {
+    grid-area: three;
+}
+.four{
+    grid-area: four;
+}
+.five{
+    grid-area: five;
+}
+.six{
+    grid-area: six;
+}
+.seven{
+    grid-area: seven;
+}
+.eight{
+    grid-area: eight;
+}
+.nine{
+    grid-area: nine;
+}
+.zero{
+    grid-area: zero;
+}
+.plus{
+    grid-area: plus;
+
+}
+.divided{
+    grid-area: divided;
+}
+.multiply{
+    grid-area: multiply;
+}
+.equals{
+    grid-area: equals;
+    
+    
+}
+.minus{
+    grid-area: minus;
+}
+.c{
+    grid-area: c;
+}
+.dot{
+    grid-area: dot;
+    font-size: 20px;
+}
+.operator:active{
+    background-color: rgb(197, 83, 34);
+}
+.number:active{
+    background-color: rgb(138, 113, 88);
+}
+.equals button:active{
+    background-color: rgb(138, 113, 88);
+}
